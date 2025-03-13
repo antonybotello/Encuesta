@@ -14,6 +14,11 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable()) // Desactivar CSRF
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/usuarios/**").permitAll() // Permitir acceso a la API de usuarios
+                .requestMatchers("/api/capitulo-uno/**").permitAll() // Permitir acceso al capítulo 1
+                .requestMatchers("/api/capitulo-dos/**").permitAll() // Permitir acceso al capítulo 2
+                .requestMatchers("/api/capitulo-tres/**").permitAll() // Permitir acceso al capítulo 3
+
+
                 .anyRequest().authenticated()
             );
         return http.build();
