@@ -1,24 +1,89 @@
-# Compiled class file
-*.class
+# ===========================
+# 🚀 GITIGNORE PARA SPRING BOOT Y NODE.JS
+# ===========================
 
-# Log file
+# 📌 Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+# ===========================
+# 📌 IGNORAR ARCHIVOS DE SPRING BOOT
+# ===========================
+
+# 🔹 Archivos de compilación de Java
+/target/
+/out/
+/bin/
+
+# 🔹 Archivos de configuración de IDEs (IntelliJ, Eclipse, VS Code)
+.idea/
+*.iml
 *.log
+*.swp
+.vscode/
+.classpath
+.project
+.settings/
 
-# BlueJ files
-*.ctxt
+# 🔹 Archivos de Maven y Gradle
+/.mvn/
+/.gradle/
+/build/
+!gradle-wrapper.jar
+wrapper/dists/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# 🔹 Configuración sensible de bases de datos y credenciales
+application.properties
+application.yml
+.env
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# 🔹 Cachés de Spring Boot
+/spring-boot-loader/
+/BOOT-INF/
+/META-INF/
+/logs/
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# ===========================
+# 📌 IGNORAR ARCHIVOS DE NODE.JS (ANGULAR)
+# ===========================
+
+# 🔹 Dependencias de Node.js
+/node_modules/
+/dist/
+/npm-debug.log*
+/yarn-debug.log*
+/yarn-error.log*
+/package-lock.json
+/pnpm-lock.yaml
+
+# 🔹 Archivos de Angular
+/.angular/
+/.angular/cache/
+
+# 🔹 Cachés de herramientas de Angular
+/.cache/
+/.husky/
+
+# 🔹 Compilaciones temporales
+/tmp/
+/out-tsc/
+
+# ===========================
+# 📌 IGNORAR ARCHIVOS GENERADOS POR EL SISTEMA
+# ===========================
+
+# 🔹 Archivos de logs
+*.log
+/logs/
+debug.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# 🔹 Cachés del sistema
+*.swp
+*.swo
+*.swn
+
+# 🔹 Archivos de lock para asegurar dependencias
+.pnpm-
